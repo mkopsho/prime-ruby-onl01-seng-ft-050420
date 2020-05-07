@@ -7,7 +7,7 @@ def prime?(number)
     return false
   else
     range = (2...number).to_a
-    range.none? do |n|
+   Benchmark.measure(range.none? do |n|
       number % n == 0
     end
   end
