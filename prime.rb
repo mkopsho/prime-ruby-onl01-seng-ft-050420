@@ -1,5 +1,3 @@
-require "benchmark"
-
 def prime?(number)
   if number == 2
     return true
@@ -12,5 +10,3 @@ def prime?(number)
     end
   end
 end
-
-puts Benchmark.measure prime?(1030030)
